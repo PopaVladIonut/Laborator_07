@@ -1,0 +1,16 @@
+p#img
+{
+	text-align: center;
+}
+body
+{
+	text-shadow: 1px 1px 4px lightgray;
+	font-family: Helvetica, sans-serif;
+	color: white;
+}
+a.nume
+{
+	text-shadow: none;
+	text-decoration: none;
+	color: mediumpurple;
+}

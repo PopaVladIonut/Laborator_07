@@ -1,0 +1,62 @@
+h1
+{
+	text-shadow: 1px 1px 4px gray;
+	font-family: Arial, sans-serif;
+	font-size: 250%;
+}
+h2
+{
+	text-align: center;
+	text-shadow: 1px 1px 4px gray;
+	font-family: Helvetica, sans-serif;
+	font-size: 160%;
+}
+p#img
+{
+	text-align: center;
+}
+img#poza
+{
+	text-align: center;
+	border: 4px solid transparent;
+	border-radius: 20%;
+	opacity: 95%;
+	filter: drop-shadow(2px 2px 8px gray);
+	filter: contrast(120%);
+}
+body
+{
+	text-shadow: 1px 1px 4px gray;
+	font-family: Helvetica, sans-serif;
+	font-size: 80%;
+}
+table
+{
+	width: 80%;
+	text-shadow: none;
+	text-align: center;
+	font-size: 100%;
+	margin-left: auto;
+  	margin-right: auto;
+	border: 4px solid transparent;
+	opacity: 70%;
+}
+p#back
+{
+	text-align: left;
+	filter: drop-shadow(2px 2px 8px gray);
+}
+a.back2
+{
+	text-decoration: none;
+}
+button {
+  background-color: steelblue;
+  border: none;
+  border-radius: 4px 12px;
+  padding: 8px 24px;
+  text-decoration: none;
+  color: white;
+  font-size: 80%;
+  opacity: 80%;
+}

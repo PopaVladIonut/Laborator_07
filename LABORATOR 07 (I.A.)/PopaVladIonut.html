@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="CSS\style.css">
+		<link rel="icon" href="Icons\Wave.png" style="width: 16px 16px;">
+		<title>Popa Vlad Ionut</title>
+	</head>
+	<style>
+		body
+		{
+			background-image: url("LightBlue.jpg");
+			background-attachment: fixed;  
+  			background-size: cover;
+		}
+		table, th, td
+		{
+			color: white;
+			border-collapse: collapse;
+			background-color: steelblue;
+		}
+		a.back2
+		{
+			color: steelblue;
+		}
+	</style>
+	<script>
+		function myFunction() 
+		{
+			document.body.style.backgroundImage = "url('LightGray.jpg')";
+			document.getElementById("titlu").style.color = "#808080";
+			document.getElementById("nume").style.color = "#808080";
+  			document.getElementById("nume").innerHTML = "BATMAN";
+			document.getElementById("poza").src="Batman.png";
+			document.getElementById("poza").style.opacity = "0.8";
+			document.getElementById("poza").style.borderWidth = "2px";
+
+  			document.getElementById("info1").style.color = "#808080";
+  			document.getElementById("info2").style.color = "#808080";
+  			document.getElementById("info3").style.color = "#808080";
+  			document.getElementById("info3").innerHTML = "<b>Ocupatie:</b> CEO Popa Enterprises";
+  			document.getElementById("citat").style.color = "#808080";
+
+  			document.getElementById("table").style.backgroundColor = "#4d4d4d";
+
+  			document.getElementById("A0").innerHTML = "Realizari";
+  			document.getElementById("A1").innerHTML = "";
+  			document.getElementById("A2").innerHTML = "Fondatorul Popa Enterprises";
+  			document.getElementById("A3").innerHTML = "Supererou recunoscut international";
+  			document.getElementById("A4").innerHTML = "Oprirea Joker-ului de nenumarate ori";
+  			document.getElementById("A0").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("A1").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("A2").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("A3").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("A4").style.backgroundColor = "#4d4d4d";
+
+  			document.getElementById("B0").innerHTML = "";
+  			document.getElementById("B1").innerHTML = "";
+  			document.getElementById("B2").innerHTML = "";
+  			document.getElementById("B3").innerHTML = "";
+  			document.getElementById("B4").innerHTML = "";
+  			document.getElementById("B0").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("B1").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("B2").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("B3").style.backgroundColor = "#4d4d4d";
+  			document.getElementById("B4").style.backgroundColor = "#4d4d4d";
+
+  			document.getElementById("hobby").style.color = "#808080";
+  			document.getElementById("hobby1").style.color = "#808080";
+  			document.getElementById("hobby1").innerHTML = "Luptator MMA";
+  			document.getElementById("hobby2").style.color = "#808080";
+  			document.getElementById("hobby2").innerHTML = "Modeling";
+
+  			document.getElementById("back2").style.color = "#4d4d4d";
+  			document.getElementById("button").style.backgroundColor = "#4d4d4d";
+		}
+
+		function age()
+		{
+			var age = 0;
+			var day = 6;
+			var month = 6;
+			var year = 2002;
+
+			var today_date = new Date();
+			var today_day = today_date.getDate();
+			var today_month = today_date.getMonth();
+			var today_year = today_date.getFullYear();
+
+			if (today_day > day)
+				age = today_year - year;
+			else if (today_month == month)
+			{
+				if (today_day >= day)
+					age = today_year - year;
+				else
+					age = today_year - year - 1;
+			}
+			else
+				age = today_year - year - 1;
+
+			var output_value = age;
+			document.getElementById("info2").innerHTML = age;
+		}
+		function normal()
+    	{
+    		document.getElementById("info2").innerHTML = "<b>Anul nasterii:</b> 06.06.2002</p>";
+		}
+	</script>
+	<body>
+		<h1 id="titlu">Colegi </a><h1>
+		<h2 id="nume">Popa Vlad Ionut</h2>
+		<p id="img"><img id="poza" src="Photos\PVI.jpg" width="250" height="250"></p>
+		<button id="button" type="button" onclick="myFunction()">Alta viata</button>
+		<p id="info1"><b>Nume:</b> Popa <br><b>Prenume:</b> Vlad Ionut </p>
+		<p id="info2" onmouseover="age()" onmouseout="normal()"><b>Anul nasterii:</b> 06.06.2002</p>
+		<p id="info3"><b>e-mail:</b> popa.vlad.ionut.1@gmail.com</p>
+		<p id="citat"><i>"Da-i unui om un peste si il vei hrani o zi. Arata-i cum sa pescuiasca si il vei hrani pe tot restul vietii lui." <br><b>Stephen R. Covey </b></i> </p>
+		<table id="table">
+			<tr>
+				<th id="A0">Discipline pe care doresc sa le aprofundez</th>
+				<th id="B0">Anul</th>
+			</tr>
+			<tr>
+				<td id="A1">Programarea calculatoarelor si limbaje de programare</td>
+				<td id="B1">I</td>
+			</tr>
+			<tr>
+				<td id="A2">Informatica aplicata</td>
+				<td id="B2">I</td>
+			</tr>
+			<tr>
+				<td id="A3">Componente si circuite pasive</td>
+				<td id="B3">I</td>
+			</tr>
+			<tr>
+				<td id="A4">Dispozitive electronice</td>
+				<td id="B4">I</td>
+			</tr>
+		</table>
+		<p id="hobby"><b>Hobby-uri:</b></p>
+		<ul>
+			<li id="hobby1">Sport</li>
+			<li id="hobby2">Gaming</li>
+		</ul>
+		<p id="back"><br><a href="Catalog.html" class="back2" id="back2">Inapoi<br><img src="Icons\BackArrow.png" width="35" height="35"></a></p>
+	</body>
+</html>
